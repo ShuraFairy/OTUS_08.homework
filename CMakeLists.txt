@@ -97,7 +97,8 @@ endif()
 
 if (MSVC)
     target_compile_options(bayan PRIVATE
-        /W4
+#        /W4
+        /EHsc /W4 #/WX
     )    
     if(WITH_BOOST_TEST)
         target_compile_options(boost_test PRIVATE
@@ -111,7 +112,8 @@ if (MSVC)
     endif()
 else ()
     target_compile_options(bayan PRIVATE
-        -Wall -Wextra -pedantic -Werror
+#        -Wall -Wextra -pedantic -Werror
+        -Wextra -pedantic -Werror
     )    
     if(WITH_BOOST_TEST)
         target_compile_options(boost_test PRIVATE

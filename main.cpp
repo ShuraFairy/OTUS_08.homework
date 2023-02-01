@@ -3,6 +3,7 @@
 #include <iostream>
 #include "finder.h"
 
+
 void to_cout(const std::vector<std::string>& v)
 {
     std::copy(v.begin(), v.end(), std::ostream_iterator<std::string>{

@@ -11,8 +11,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Doxygen COMPONENTS dot)
-find_package(GTest REQUIRED)
+find_package(Doxygen)
+#find_package(GTest REQUIRED)
 find_package(Boost COMPONENTS filesystem program_options regex REQUIRED)
 
 option(WITH_BOOST_TEST "Whether to build Boost test" ON)

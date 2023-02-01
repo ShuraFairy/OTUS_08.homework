@@ -18,8 +18,7 @@ class CompareFileHash
 {
 public:
 	bool in_result = false;	
-	//const size_t block_count;						// Number of hash blocks of the file
-	size_t block_count;						// Number of hash blocks of the file
+	const size_t block_count;						// Number of hash blocks of the file
 
 	CompareFileHash(fs::path path, uintmax_t size, uintmax_t hash_blocksize, IHasher* hasher) :
 		path(path), 
